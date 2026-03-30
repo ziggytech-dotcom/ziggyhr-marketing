@@ -7,10 +7,9 @@ export default function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
           {/* Brand */}
           <div className="col-span-2 md:col-span-1">
-            <Link href="/" className="flex items-center gap-1 text-xl font-bold mb-4">
-              <span style={{ color: "#ff1744" }}>Ziggy</span>
-              <span style={{ color: "#8b5cf6" }}>HR</span>
-            </Link>
+            <a href="/" style={{ textDecoration: "none", display: "flex", alignItems: "center", marginBottom: "1rem" }}>
+              <img src="/ziggyhr-wordmark-v3.png" alt="ZiggyHR" style={{ height: 32, width: "auto" }} />
+            </a>
             <p className="text-sm leading-relaxed" style={{ color: "#a1a1aa" }}>
               HR that doesn&apos;t need an HR department. $59/mo, no contracts, cancel anytime.
             </p>
