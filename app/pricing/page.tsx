@@ -4,19 +4,19 @@ import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 
 export const metadata: Metadata = {
-  title: "Pricing — $59/mo, All Inclusive",
+  title: "Pricing — $79/mo, All Inclusive",
   description:
-    "ZiggyHR is $59/month. Unlimited employees. All features included. No per-seat pricing, no contracts, no sales calls. 14-day free trial.",
+    "ZiggyHR is $79/month. Unlimited employees. All features included. No per-seat pricing, no contracts, no sales calls. 14-day free trial.",
 };
 
 const faqs = [
   {
     q: "How many employees are included?",
-    a: "Unlimited. We don't do per-seat pricing. $59/mo covers your whole team, whether that's 5 people or 150.",
+    a: "Unlimited. We don't do per-seat pricing. $79/mo covers your whole team, whether that's 5 people or 150.",
   },
   {
     q: "Is self-service included?",
-    a: "Yes. Every plan includes the employee self-service portal. Employees can update their own info, request PTO, download documents, and more — all included at $59/mo.",
+    a: "Yes. Every plan includes the employee self-service portal. Employees can update their own info, request PTO, download documents, and more — all included at $79/mo.",
   },
   {
     q: "What PTO types can I track?",
@@ -32,7 +32,7 @@ const faqs = [
   },
   {
     q: "What happens after the trial?",
-    a: "After 14 days, add a credit card to continue at $59/mo. If you cancel during the trial, you owe nothing.",
+    a: "After 14 days, add a credit card to continue at $79/mo. If you cancel during the trial, you owe nothing.",
   },
   {
     q: "Is onboarding really included?",
@@ -40,11 +40,11 @@ const faqs = [
   },
   {
     q: "Do you offer annual billing?",
-    a: "Yes. Pay annually and get 2 months free ($590/year instead of $708). Switch in your account settings anytime.",
+    a: "Yes. Pay annually and get 2 months free ($790/year instead of $948). Switch in your account settings anytime.",
   },
   {
     q: "How is ZiggyHR different from BambooHR?",
-    a: "We have the same essential HR features at one-fifth the price. BambooHR starts at $250+/mo. ZiggyHR is $59/mo. No sales call, no long-term contract.",
+    a: "We have the same essential HR features at one-fifth the price. BambooHR starts at $250+/mo. ZiggyHR is $79/mo. No sales call, no long-term contract.",
   },
 ];
 
@@ -60,7 +60,7 @@ export default function PricingPage() {
               Pricing
             </div>
             <h1 className="text-5xl md:text-6xl font-bold mb-6 text-white">
-              $59/month. <br />
+              $79/month. <br />
               <span style={{ color: "#a1a1aa" }}>That&apos;s it.</span>
             </h1>
             <p className="text-xl" style={{ color: "#a1a1aa" }}>
@@ -85,13 +85,13 @@ export default function PricingPage() {
                     <p className="text-sm mt-1" style={{ color: "#a1a1aa" }}>Everything. For everyone.</p>
                   </div>
                   <div className="text-right">
-                    <div className="text-5xl font-bold text-white">$59</div>
+                    <div className="text-5xl font-bold text-white">$79</div>
                     <div className="text-sm" style={{ color: "#a1a1aa" }}>/month</div>
                   </div>
                 </div>
 
                 <div className="my-6 py-3 px-4 rounded-lg text-sm" style={{ background: "#1e1433", color: "#8b5cf6" }}>
-                  💡 Annual billing: <strong>$590/year</strong> — 2 months free
+                  💡 Annual billing: <strong>$790/year</strong> — 2 months free
                 </div>
 
                 <div className="grid grid-cols-2 gap-3 mb-8">
@@ -139,7 +139,7 @@ export default function PricingPage() {
             <h2 className="text-3xl font-bold mb-8 text-center text-white">You&apos;re not paying for their enterprise.</h2>
             <div className="space-y-4">
               {[
-                { name: "ZiggyHR", price: "$59/mo", bar: 20, color: "#8b5cf6" },
+                { name: "ZiggyHR", price: "$79/mo", bar: 20, color: "#8b5cf6" },
                 { name: "BambooHR", price: "$250+/mo", bar: 84, color: "#27272a" },
                 { name: "Rippling", price: "Custom quote", bar: 100, color: "#27272a" },
               ].map((item) => (
@@ -188,7 +188,7 @@ export default function PricingPage() {
           <div className="max-w-2xl mx-auto">
             <h2 className="text-4xl font-bold mb-4 text-white">Stop overpaying for HR software.</h2>
             <p className="text-lg mb-8" style={{ color: "#a1a1aa" }}>
-              $59/mo. 14-day free trial. No credit card. No sales call.
+              $79/mo. 14-day free trial. No credit card. No sales call.
             </p>
             <Link
               href="#"
