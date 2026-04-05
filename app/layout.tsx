@@ -1,65 +1,25 @@
-import type { Metadata } from "next";
-import "./globals.css";
+import type { Metadata } from "next"
+import { Space_Grotesk } from "next/font/google"
+import "./globals.css"
+import { CookieBanner } from "@/app/components/CookieBanner"
+
+const spaceGrotesk = Space_Grotesk({ subsets: ["latin"], weight: ["400","500","600","700"], variable: "--font-space-grotesk" })
 
 export const metadata: Metadata = {
-  title: {
-    default: "ZiggyHR — HR Software for Small Business | $59/mo",
-    template: "%s | ZiggyHR",
-  },
-  description:
-    "ZiggyHR gives small businesses professional HR tools — employee directory, PTO tracking, onboarding checklists, and self-service — without the $250/mo enterprise price tag.",
-  keywords: [
-    "HR software small business",
-    "employee management",
-    "PTO tracking",
-    "onboarding software",
-    "BambooHR alternative",
-    "Rippling alternative",
-    "HR software $59",
-  ],
-  openGraph: {
-    title: "ZiggyHR — HR that doesn't need an HR department",
-    description:
-      "BambooHR costs $250/mo. ZiggyHR costs $59. Same essential HR features — employee directory, PTO, onboarding, self-service.",
-    url: "https://ziggyhr.com",
-    siteName: "ZiggyHR",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "ZiggyHR — HR that doesn't need an HR department",
-    description: "BambooHR costs $250/mo. ZiggyHR costs $59. No contracts.",
-  },
-  robots: {
-    index: true,
-    follow: true,
-  },
+  title: { default: "ZiggyHR — HR software built for teams that are actually small", template: "%s | ZiggyHR" },
+  description: "HR software built for teams that are actually small. Part of the ZiggyTech Business Suite.",
+  openGraph: { title: "ZiggyHR — HR software built for teams that are actually small", description: "HR software built for teams that are actually small.", siteName: "ZiggyHR", url: "https://ziggyhr.com" },
+  icons: { icon: '/favicon.ico' },
+  metadataBase: new URL("https://ziggyhr.com"),
+}
 
-  icons: {
-    icon: "/favicon.png",
-    shortcut: "/favicon.ico",
-    apple: "/apple-touch-icon.png",
-  },
-};
-
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
-          rel="stylesheet"
-        />
-      </head>
-      <body style={{ background: "#0f0a0a", color: "#ffffff", fontFamily: "'Space Grotesk', sans-serif" }}>
+    <html lang="en" className={spaceGrotesk.variable}>
+      <body className="bg-[#0a0a0a] text-white antialiased" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
         {children}
+        <CookieBanner />
       </body>
     </html>
-  );
+  )
 }

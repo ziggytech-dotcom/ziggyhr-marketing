@@ -1,63 +1,49 @@
-import Link from "next/link";
+import Link from 'next/link'
+import { ZiggyHRLogo } from '@/app/components/ZiggyHRLogo'
 
-export default function Footer() {
+export function MarketingFooter() {
   return (
-    <footer className="border-t mt-24" style={{ borderColor: "#27272a" }}>
+    <footer className="bg-[#0a0a0a] border-t border-[#2d2d2d]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
-          {/* Brand */}
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-10">
           <div className="col-span-2 md:col-span-1">
-            <a href="/" style={{ textDecoration: "none", display: "flex", alignItems: "center", marginBottom: "1rem" }}>
-              <img src="/ziggyhr-wordmark-v3.png" alt="ZiggyHR" style={{ height: 32, width: "auto" }} />
-            </a>
-            <p className="text-sm leading-relaxed" style={{ color: "#a1a1aa" }}>
-              HR that doesn&apos;t need an HR department. $59/mo, no contracts, cancel anytime.
-            </p>
+            <ZiggyHRLogo />
+            <p className="mt-4 text-[#b3b3b3] text-sm leading-relaxed">HR software built for teams that are actually small</p>
           </div>
-
-          {/* Product */}
           <div>
-            <h4 className="text-sm font-semibold mb-4 text-white">Product</h4>
-            <ul className="space-y-2">
-              <li><Link href="/features" className="text-sm hover:text-white transition-colors" style={{ color: "#a1a1aa" }}>Features</Link></li>
-              <li><Link href="/pricing" className="text-sm hover:text-white transition-colors" style={{ color: "#a1a1aa" }}>Pricing</Link></li>
-              <li><Link href="/vs/bamboohr" className="text-sm hover:text-white transition-colors" style={{ color: "#a1a1aa" }}>vs BambooHR</Link></li>
-              <li><Link href="/vs/rippling" className="text-sm hover:text-white transition-colors" style={{ color: "#a1a1aa" }}>vs Rippling</Link></li>
+            <h4 className="text-white font-semibold text-sm mb-4">Product</h4>
+            <ul className="space-y-3">
+              {['/features','/pricing','/integrations','/compare/bamboohr','/blog','/changelog','/security','/faq'].map((href) => (
+                <li key={href}><Link href={href} className="text-[#b3b3b3] hover:text-white text-sm">{href.replace('/','').replace('-',' ')}</Link></li>
+              ))}
             </ul>
           </div>
-
-          {/* Industries */}
           <div>
-            <h4 className="text-sm font-semibold mb-4 text-white">Industries</h4>
-            <ul className="space-y-2">
-              <li><Link href="/small-business" className="text-sm hover:text-white transition-colors" style={{ color: "#a1a1aa" }}>Small Business</Link></li>
-              <li><Link href="/restaurants" className="text-sm hover:text-white transition-colors" style={{ color: "#a1a1aa" }}>Restaurants</Link></li>
-              <li><Link href="/retail" className="text-sm hover:text-white transition-colors" style={{ color: "#a1a1aa" }}>Retail</Link></li>
-              <li><Link href="/contractors" className="text-sm hover:text-white transition-colors" style={{ color: "#a1a1aa" }}>Contractors</Link></li>
+            <h4 className="text-white font-semibold text-sm mb-4">Company</h4>
+            <ul className="space-y-3">
+              {['/about','/press','/contact'].map((href) => <li key={href}><Link href={href} className="text-[#b3b3b3] hover:text-white text-sm">{href.replace('/','').charAt(0).toUpperCase()+href.slice(2)}</Link></li>)}
             </ul>
           </div>
-
-          {/* Company */}
           <div>
-            <h4 className="text-sm font-semibold mb-4 text-white">Company</h4>
-            <ul className="space-y-2">
-              <li><Link href="/pricing" className="text-sm hover:text-white transition-colors" style={{ color: "#a1a1aa" }}>Get started</Link></li>
-              <li><a href="mailto:hello@ziggyhr.com" className="text-sm hover:text-white transition-colors" style={{ color: "#a1a1aa" }}>Contact</a></li>
-              <li><Link href="#" className="text-sm hover:text-white transition-colors" style={{ color: "#a1a1aa" }}>Privacy</Link></li>
-              <li><Link href="#" className="text-sm hover:text-white transition-colors" style={{ color: "#a1a1aa" }}>Terms</Link></li>
+            <h4 className="text-white font-semibold text-sm mb-4">Legal</h4>
+            <ul className="space-y-3">
+              {['/privacy','/terms','/cookies'].map((href) => <li key={href}><Link href={href} className="text-[#b3b3b3] hover:text-white text-sm">{href.replace('/','').charAt(0).toUpperCase()+href.slice(2)}</Link></li>)}
+            </ul>
+          </div>
+          <div>
+            <h4 className="text-white font-semibold text-sm mb-4">Connect</h4>
+            <ul className="space-y-3">
+              <li><a href="https://twitter.com/ziggyhr" target="_blank" rel="noopener noreferrer" className="text-[#b3b3b3] hover:text-white text-sm">Twitter / X</a></li>
+              <li><a href="https://linkedin.com/company/ziggyhr" target="_blank" rel="noopener noreferrer" className="text-[#b3b3b3] hover:text-white text-sm">LinkedIn</a></li>
+              <li><a href="https://youtube.com/@ziggyhr" target="_blank" rel="noopener noreferrer" className="text-[#b3b3b3] hover:text-white text-sm">YouTube</a></li>
             </ul>
           </div>
         </div>
-
-        <div className="border-t pt-8 flex flex-col md:flex-row justify-between items-center gap-4" style={{ borderColor: "#27272a" }}>
-          <p className="text-sm" style={{ color: "#a1a1aa" }}>
-            © {new Date().getFullYear()} ZiggyHR. All rights reserved.
-          </p>
-          <p className="text-sm" style={{ color: "#a1a1aa" }}>
-            Built for small businesses. Not enterprises.
-          </p>
+        <div className="border-t border-[#2d2d2d] mt-12 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+          <p className="text-[#b3b3b3] text-sm">&copy; 2026 ZiggyTech Ventures LLC. All rights reserved.</p>
+          <p className="text-[#555] text-xs">All trademarks belong to their respective owners.</p>
         </div>
       </div>
     </footer>
-  );
+  )
 }

@@ -17,7 +17,7 @@ const rows = [
   { feature: `Priority support`, ziggy: true },
 ]
 const reasons = [
-  `Save money every month — BambooHR charges $250/mo. ZiggyHR starts at $49/mo.`,
+  `Save money every month — Gusto HR charges $40/mo. ZiggyHR starts at $49/mo.`,
   `ZiggyHR is built for how small businesses actually operate — not enterprise workflows.`,
   `Get up and running in under an hour. No lengthy onboarding required.`,
   `ZiggyHR integrates natively with all 9 other ZiggyTech apps. No API setup needed.`,
@@ -30,9 +30,9 @@ export default function ComparePage() {
       <section className="relative overflow-hidden pt-20 pb-20 px-4">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-[#8b5cf6]/8 rounded-full blur-3xl pointer-events-none" />
         <div className="max-w-4xl mx-auto text-center relative">
-          <div className="inline-flex items-center gap-2 bg-[#1a1a1a] border border-[#2d2d2d] rounded-full px-4 py-1.5 text-sm text-[#b3b3b3] mb-8">ZiggyHR vs BambooHR</div>
+          <div className="inline-flex items-center gap-2 bg-[#1a1a1a] border border-[#2d2d2d] rounded-full px-4 py-1.5 text-sm text-[#b3b3b3] mb-8">ZiggyHR vs Gusto HR</div>
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
-            <span className="text-[#8b5cf6]">ZiggyHR</span> vs <span className="text-[#b3b3b3]">BambooHR</span>
+            <span className="text-[#8b5cf6]">ZiggyHR</span> vs <span className="text-[#b3b3b3]">Gusto HR</span>
           </h1>
           <p className="text-xl text-[#b3b3b3] max-w-2xl mx-auto mb-10">The honest comparison. Same core features. Better pricing for small teams.</p>
           <Link href="https://app.ziggyhr.com/signup" className="bg-[#8b5cf6] text-white rounded-xl px-8 py-4 font-semibold text-lg hover:opacity-90 inline-block">Try ZiggyHR Free</Link>
@@ -42,7 +42,7 @@ export default function ComparePage() {
         <div className="max-w-4xl mx-auto">
           <h2 className="text-2xl font-bold text-white mb-6">The verdict</h2>
           <div className="bg-[#1a1a1a] border border-[#2d2d2d] rounded-xl p-6">
-            <p className="text-[#b3b3b3] leading-relaxed">BambooHR is excellent software — but it starts at $250+/month for small teams. That's 5x what ZiggyHR costs. If you need core HR — profiles, PTO, onboarding, org chart — ZiggyHR does the same job at a fraction of the price.</p>
+            <p className="text-[#b3b3b3] leading-relaxed">Gusto is primarily a payroll tool that has added HR features. Their HR add-on is $40+/employee/month. ZiggyHR is built as a pure HR tool — and integrates natively with ZiggyPayroll if you need both.</p>
           </div>
         </div>
       </section>
@@ -56,8 +56,8 @@ export default function ComparePage() {
               <p className="text-sm text-[#8b5cf6] mt-2">Full ZiggyTech Suite integration</p>
             </div>
             <div className="bg-[#111111] border border-[#1f1f1f] rounded-2xl p-8 text-center">
-              <p className="text-xl font-bold text-white mb-2">BambooHR</p>
-              <p className="text-5xl font-bold text-white mb-1">$250<span className="text-xl text-[#b3b3b3]">/mo</span></p>
+              <p className="text-xl font-bold text-white mb-2">Gusto HR</p>
+              <p className="text-5xl font-bold text-white mb-1">$40<span className="text-xl text-[#b3b3b3]">/mo</span></p>
               <p className="text-sm text-[#b3b3b3] mt-2">No suite integration</p>
             </div>
           </div>
@@ -69,7 +69,7 @@ export default function ComparePage() {
             <div className="grid grid-cols-3 bg-[#1a1a1a] border-b border-[#1f1f1f]">
               <div className="p-4 text-sm font-semibold text-[#b3b3b3]">Feature</div>
               <div className="p-4 text-sm font-semibold text-[#8b5cf6] text-center">ZiggyHR</div>
-              <div className="p-4 text-sm font-semibold text-[#b3b3b3] text-center">BambooHR</div>
+              <div className="p-4 text-sm font-semibold text-[#b3b3b3] text-center">Gusto HR</div>
             </div>
             {rows.map((r) => (
               <div key={r.feature} className="grid grid-cols-3 border-b border-[#1f1f1f] last:border-0">
