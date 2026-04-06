@@ -28,7 +28,7 @@ const rows = [
 export default function VsRipplingPage() {
   return (
     <>
-      <Nav />
+      <MarketingNav />
       <main className="pt-24">
         {/* Hero */}
         <section className="py-20 px-4 text-center relative overflow-hidden">
@@ -237,7 +237,7 @@ export default function VsRipplingPage() {
           sub="Set up ZiggyHR in 10 minutes. $59/mo. 14-day free trial."
         />
       </main>
-      <Footer />
+      <MarketingFooter />
     </>
   );
 }

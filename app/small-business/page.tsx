@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 export default function SmallBusinessPage() {
   return (
     <>
-      <Nav />
+      <MarketingNav />
       <main className="pt-24">
         {/* Hero */}
         <section className="py-20 px-4 text-center relative overflow-hidden">
@@ -196,7 +196,7 @@ export default function SmallBusinessPage() {
           sub="$59/mo. 14-day free trial. Set up in 10 minutes. No sales call."
         />
       </main>
-      <Footer />
+      <MarketingFooter />
     </>
   );
 }

@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 export default function RetailPage() {
   return (
     <>
-      <Nav />
+      <MarketingNav />
       <main className="pt-24">
         {/* Hero */}
         <section className="py-20 px-4 text-center relative overflow-hidden">
@@ -160,7 +160,7 @@ export default function RetailPage() {
           sub="$59/mo. 14-day free trial. No contracts, no complexity."
         />
       </main>
-      <Footer />
+      <MarketingFooter />
     </>
   );
 }

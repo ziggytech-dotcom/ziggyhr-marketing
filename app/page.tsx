@@ -48,8 +48,7 @@ export default function HomePage() {
             ZiggyHR — HR Software for local business
           </div>
           <h1 className="text-5xl md:text-7xl font-bold text-white leading-tight tracking-tight mb-6">
-            HR software built for teams that are actually small.{' '}
-            {tagline.split('. ').length > 1 && <span className="text-[#8b5cf6]"></span>}
+            HR software built for teams that are actually small
           </h1>
           <p className="text-xl md:text-2xl text-[#b3b3b3] max-w-3xl mx-auto leading-relaxed mb-10">
             BambooHR starts at $250/month. For a 10-person team. We built the same core HR tools — onboarding, PTO, org chart, employee profiles — for $49/mo.

@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 export default function RestaurantsPage() {
   return (
     <>
-      <Nav />
+      <MarketingNav />
       <main className="pt-24">
         {/* Hero */}
         <section className="py-20 px-4 text-center relative overflow-hidden">
@@ -165,7 +165,7 @@ export default function RestaurantsPage() {
           sub="$59/mo. Set up in 10 minutes. 14-day free trial."
         />
       </main>
-      <Footer />
+      <MarketingFooter />
     </>
   );
 }
