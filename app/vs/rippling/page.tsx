@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Nav from "../../components/Nav";
-import Footer from "../../components/Footer";
+import { MarketingNav } from '@/app/components/Nav';
+import { MarketingFooter } from '@/app/components/Footer';
 import CTASection from "../../components/CTASection";
 
 export const metadata: Metadata = {
